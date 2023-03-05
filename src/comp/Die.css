@@ -1,0 +1,37 @@
+
+.die{
+    width: 45.84px;
+    height: 45.84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.081);
+    cursor: pointer;
+
+}
+.die p {
+    font-family: 'Karla';
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #2B283A;
+    
+}
+.die:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.092);
+    
+  }
+
+  @media only screen and (max-width: 450px) {
+
+    .die{
+        width: 55px;
+        height: 55px;
+    
+    }
+  
+  
+  
+  
+  
+  }

@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  background-color: #2B283A;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tenzie--screen{
+  width: 420px;
+  min-height: 420px;
+  height: 80%;
+  background: #F5F5F5;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  font-family: 'Karla';
+  
+}
+.tenzie--screen h1{
+  padding: 0;
+  margin:0;
+  
+}
+.tenzie--screen .instructions{
+  padding: 0;
+  margin: 10px auto 0;
+  font-size: 0.8rem;
+  width: 270px;
+  
+}
+.dies-cont{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 30px;
+  gap:18px
+  
+}
+button{
+  width: 144px;
+  height: 35.84px;
+  background-color: #5035FF;
+  color:#FFFFFF;
+  margin:0 auto;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.165);
+  cursor: pointer;
+  
+}
+button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.269);
+  
+}
+.confetti{
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 450px) {
+
+  .tenzie--screen{
+      width: 375px;
+      height: 80vh;
+      
+    
+  }
+  button{
+  width: 164px;
+  height: 53.84px;
+
+  
+}
+.dies-cont{
+  gap:10px
+  
+}
+.confetti{
+  width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
 }
